@@ -17,7 +17,7 @@ When(/^user tries to login using email "([^"]*)" and password "([^"]*)"$/, async
         .click(authenticationPage.loginWidget().signInButton())
 });
 
-Then(/^error message must be shown$/, async function() {
+Then(/^error message should be shown$/, async function() {
     t = await this.waitForTestController();
     return t.expect(authenticationPage.errorMessage().visible).ok();
 });
