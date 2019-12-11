@@ -36,7 +36,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13785000000
+              "duration": 14856000000
             }
           },
           {
@@ -49,7 +49,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4701000000
+              "duration": 4404000000
             }
           },
           {
@@ -62,7 +62,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1593000000
+              "duration": 1854000000
             }
           },
           {
@@ -75,12 +75,12 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1237000000
+              "duration": 1216000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 12,
             "name": "user proceeds to checkout",
             "match": {
@@ -88,7 +88,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2099000000
+              "duration": 2904000000
             }
           },
           {
@@ -101,20 +101,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1235000000
+              "duration": 1371000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
-            "name": "product 2 quantity is \"2\"",
+            "name": "product 2 quantity should be \"2\"",
             "match": {
               "location": "src\\step_definitions\\shopping-cart-summary-page-steps.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 158000000
+              "duration": 175000000
             }
           },
           {
@@ -127,20 +127,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 791000000
+              "duration": 1123000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 16,
-            "name": "amount of cart items is 1",
+            "name": "amount of cart items should be 1",
             "match": {
               "location": "src\\step_definitions\\shopping-cart-summary-page-steps.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 78000000
             }
           },
           {
@@ -153,20 +153,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1675000000
+              "duration": 1921000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 18,
-            "name": "Authentication page is opened",
+            "name": "`Authentication page` should be opened",
             "match": {
               "location": "src\\step_definitions\\authentication-page-steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 485000000
+              "duration": 285000000
             }
           },
           {
@@ -177,7 +177,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 4000000
             }
           }
         ]
@@ -221,7 +221,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2039000000
+              "duration": 2858000000
             }
           },
           {
@@ -234,7 +234,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2375000000
+              "duration": 4566000000
             }
           },
           {
@@ -247,20 +247,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2803000000
+              "duration": 3534000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
-            "name": "error message must be shown",
+            "name": "error message should be shown",
             "match": {
               "location": "src\\step_definitions\\authentication-page-steps.ts:20"
             },
             "result": {
               "status": "passed",
-              "duration": 83000000
+              "duration": 81000000
             }
           },
           {
@@ -271,7 +271,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 5000000
             }
           }
         ]
