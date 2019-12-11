@@ -5,6 +5,10 @@ let t: TestController;
 
 const authenticationPage: AuthenticationPage = new AuthenticationPage();
 
+Then(/^`Authentication page` should be opened$/, async function() {
+    t = await this.waitForTestController();
+    await t.expect(authenticationPage.isOpened()).ok();
+})
 
 When(/^user tries to login using email "([^"]*)" and password "([^"]*)"$/, async function(email: string, pass: string) {
     t = await this.waitForTestController();

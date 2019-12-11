@@ -9,7 +9,10 @@ Given user opens Home page
 When user searches "black dress"
 And user adds product 1 to cart
 And user adds product 2 to cart
-Then user proceeds to checkout
+And user proceeds to checkout
 When user changes product 2 quantity to "2"
-And user removes product 1 from the cart
-Then user clicks `Proceed to checkout` button
+Then product 2 quantity should be "2"
+When user removes product 1 from the cart
+Then amount of cart items should be 1
+When user clicks `Proceed to checkout` button
+Then `Authentication page` should be opened

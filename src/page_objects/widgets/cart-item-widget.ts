@@ -4,8 +4,12 @@ import { $ } from "../../utils";
 
 export class CartItemsList{
 
-    getItem(index:number){
+    getItem(index:number=0) {
         return new CartItemWidget(index);
+    }
+
+    length() {
+        return this.getItem().root().count;
     }
 }
 
@@ -13,7 +17,7 @@ export class CartItemsList{
 class CartItemWidget{
     private itemIndex: number;
 
-    constructor(itemIndex: number) {
+    constructor(itemIndex: number=0) {
         this.itemIndex = itemIndex;
     }
 

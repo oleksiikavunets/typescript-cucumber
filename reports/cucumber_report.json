@@ -36,7 +36,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14538000000
+              "duration": 13785000000
             }
           },
           {
@@ -49,7 +49,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5056000000
+              "duration": 4701000000
             }
           },
           {
@@ -62,7 +62,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1800000000
+              "duration": 1593000000
             }
           },
           {
@@ -75,7 +75,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2215000000
+              "duration": 1237000000
             }
           },
           {
@@ -88,7 +88,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2138000000
+              "duration": 2099000000
             }
           },
           {
@@ -101,33 +101,72 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1549000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "user removes product 1 from the cart",
-            "match": {
-              "location": "src\\step_definitions\\shopping-cart-summary-page-steps.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1298000000
+              "duration": 1235000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 15,
-            "name": "user clicks `Proceed to checkout` button",
+            "line": 14,
+            "name": "product 2 quantity is \"2\"",
             "match": {
-              "location": "src\\step_definitions\\shopping-cart-summary-page-steps.ts:19"
+              "location": "src\\step_definitions\\shopping-cart-summary-page-steps.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 3388000000
+              "duration": 158000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "user removes product 1 from the cart",
+            "match": {
+              "location": "src\\step_definitions\\shopping-cart-summary-page-steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 791000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "amount of cart items is 1",
+            "match": {
+              "location": "src\\step_definitions\\shopping-cart-summary-page-steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "user clicks `Proceed to checkout` button",
+            "match": {
+              "location": "src\\step_definitions\\shopping-cart-summary-page-steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1675000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Authentication page is opened",
+            "match": {
+              "location": "src\\step_definitions\\authentication-page-steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 485000000
             }
           },
           {
@@ -138,7 +177,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 3000000
             }
           }
         ]
@@ -182,7 +221,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3331000000
+              "duration": 2039000000
             }
           },
           {
@@ -195,7 +234,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3195000000
+              "duration": 2375000000
             }
           },
           {
@@ -204,11 +243,11 @@
             "line": 10,
             "name": "user tries to login using email \"test@test.test\" and password \"1234\"",
             "match": {
-              "location": "src\\step_definitions\\authentication-page-steps.ts:9"
+              "location": "src\\step_definitions\\authentication-page-steps.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 2488000000
+              "duration": 2803000000
             }
           },
           {
@@ -217,11 +256,11 @@
             "line": 11,
             "name": "error message must be shown",
             "match": {
-              "location": "src\\step_definitions\\authentication-page-steps.ts:16"
+              "location": "src\\step_definitions\\authentication-page-steps.ts:20"
             },
             "result": {
               "status": "passed",
-              "duration": 151000000
+              "duration": 83000000
             }
           },
           {
