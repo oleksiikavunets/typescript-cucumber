@@ -1,0 +1,62 @@
+{
+  "name": "typescript-task",
+  "version": "0.0.1",
+  "description": "Integration of TestCafe, Cucumberjs and TypeScript",
+  "author": "OK",
+  "scripts": {
+    "UNIX:": "################# BELOW ARE THE LINUX & OSX COMMANDS #################",
+    "lint": "./node_modules/tslint/bin/tslint -c ./tslint.json --project ./tsconfig.json",
+    "lint-fix": "npm run lint -- --fix",
+    "format": "./node_modules/.bin/prettier --single-quote --write './**/*.ts'",
+    "style": "npm run format && npm run lint-fix",
+    "test": "TS_NODE_PROJECT='./tsconfig.json' ./node_modules/cucumber/bin/cucumber-js src/features --require-module ts-node/register --require 'src/**/*.ts' -f json:./reports/cucumber_report.json",
+    "WINDOWS": "################# BELOW ARE THE WINDOWS (WIN) COMMANDS #################",
+    "lint:win": "tslint.cmd -c tslint.json --project tsconfig.json",
+    "lint-fix:win": "npm run lint:win -- --fix",
+    "format:win": "prettier.cmd --single-quote --write ./**/*.ts",
+    "style:win": "npm run format:win && npm run lint-fix:win",
+    "test:win": "cucumber-js.cmd src/features --require-module ts-node/register --require src/**/*.ts -f json:reports/cucumber_report.json"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "tslint --format codeFrame --fix",
+      "git add"
+    ],
+    "{src,e2e}/**/*.{js,ts,scss}": [
+      "npm run format",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@types/chai": "~4.2.2",
+    "@types/chai-string": "~1.4.2",
+    "@types/cucumber": "~6.0.0",
+    "@types/node": "~10.14.17",
+    "base64-img": "~1.0.4",
+    "chai": "~4.2.0",
+    "chai-string": "~1.5.0",
+    "cucumber": "~6.0.5",
+    "cucumber-html-reporter": "~5.0.2",
+    "cucumber-junit": "~1.7.1",
+    "cucumber-junit-convert": "~1.1.0",
+    "husky": "~3.0.9",
+    "lint-staged": "~9.5.0",
+    "prettier": "~1.19.1",
+    "screenshot-desktop": "~1.10.0",
+    "testcafe": "~1.7.0",
+    "testcafe-reporter-html": "~1.4.5",
+    "ts-node": "~8.5.4",
+    "tslint": "~5.20.0",
+    "tslint-config-prettier": "~1.18.0",
+    "tslint-config-standard": "~9.0.0",
+    "typescript": "~3.5.3"
+  },
+  "dependencies": {
+    "testcafe-reporter-cucumber-json": "^4.0.0"
+  }
+}
