@@ -1,0 +1,242 @@
+[
+  {
+    "description": "    User can add products to cart, update cart and checkout successfully",
+    "keyword": "Feature",
+    "name": "Cart",
+    "line": 2,
+    "id": "cart",
+    "tags": [
+      {
+        "name": "@cart",
+        "line": 1
+      }
+    ],
+    "uri": "src\\features\\cart.feature",
+    "elements": [
+      {
+        "id": "cart;user-opens-home-page,-searches-a-product,-adds-products-to-cart,-updates-the-cart-and-checkouts-successfully",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "User opens Home page, searches a product, adds products to cart, updates the cart and checkouts successfully",
+        "tags": [
+          {
+            "name": "@cart",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "user opens Home page",
+            "match": {
+              "location": "src\\step_definitions\\home-page-steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14538000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "user searches \"black dress\"",
+            "match": {
+              "location": "src\\step_definitions\\home-page-steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5056000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "user adds product 1 to cart",
+            "match": {
+              "location": "src\\step_definitions\\home-page-steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1800000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "user adds product 2 to cart",
+            "match": {
+              "location": "src\\step_definitions\\home-page-steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2215000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "user proceeds to checkout",
+            "match": {
+              "location": "src\\step_definitions\\home-page-steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2138000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user changes product 2 quantity to \"2\"",
+            "match": {
+              "location": "src\\step_definitions\\shopping-cart-summary-page-steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1549000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "user removes product 1 from the cart",
+            "match": {
+              "location": "src\\step_definitions\\shopping-cart-summary-page-steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1298000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "user clicks `Proceed to checkout` button",
+            "match": {
+              "location": "src\\step_definitions\\shopping-cart-summary-page-steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3388000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "src\\support\\hooks.ts:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    User must not be able to login using invalid credentials",
+    "keyword": "Feature",
+    "name": "Login",
+    "line": 2,
+    "id": "login",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 1
+      }
+    ],
+    "uri": "src\\features\\login.feature",
+    "elements": [
+      {
+        "id": "login;login-using-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login using invalid credentials",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "user opens Home page",
+            "match": {
+              "location": "src\\step_definitions\\home-page-steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3331000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "user clicks `Sign In` button",
+            "match": {
+              "location": "src\\step_definitions\\home-page-steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3195000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "user tries to login using email \"test@test.test\" and password \"1234\"",
+            "match": {
+              "location": "src\\step_definitions\\authentication-page-steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2488000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "error message must be shown",
+            "match": {
+              "location": "src\\step_definitions\\authentication-page-steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 151000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "src\\support\\hooks.ts:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
